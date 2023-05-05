@@ -1,0 +1,220 @@
+:root{
+    --color-bg: #5E6973;
+    --color-text-main: white;
+    --color-primary: #C42021;
+    --wrapper-height: 87vh;
+    --image-max-width: 300px;
+    --image-margin: 3rem;
+    font-family: "Lucida Console", "Courier New", monospace;
+    --font-family-header: "Lucida Console";
+  }
+    /* body*/
+    .body{
+        background-color: #ececec;
+    }
+.bannercontainer{
+    position: relative;
+    text-align: center;
+    color: white;
+    font-size: 3vw;
+    
+}
+
+    /* Nav bar*/
+
+  .navbar {
+    background-color: black;
+    overflow: hidden;
+    font-size: 2vw;
+
+    
+  }
+  
+  /* nav bar links*/
+  .navbar a {
+    float: left;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    padding: 10px 15px;
+    
+    font-family: "Lucida Console", "Courier New", monospace;
+  }
+  
+  /* hover */
+  .navbar a:hover {
+    color: #C42021;
+  }
+  
+  /* active current */
+  .navbar a.active {
+  
+    color: #A31621;
+  }
+/* image banner style*/
+
+.banner {
+    margin: auto;
+    display: block;
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    max-height: 40vh;
+    
+}
+/* Centered text */
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+
+/*news cards*/
+.main{
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  padding: 10px;
+  margin:auto;
+}
+.card{
+  display: flex;
+  flex-direction: row;
+  max-width: 400px;
+  box-shadow: 5px 5px 20px 2px black;
+  border-radius: 5px;
+  overflow: hidden;
+  padding-bottom: 25px;
+  background: #ffffff;
+
+}
+.card img{
+  min-height: 210px;
+    max-height: 210px;
+    width: 100%;
+    background-color: white;
+}
+.card h4,
+.card div{
+  padding: 5px;
+  font-size: 18px;
+
+  margin: 0px;
+}
+/*https://newsapi.org/*/
+/*Tutorial https://www.youtube.com/watch?v=j-uZMKgqOuY&t=5547s*/
+/*news card content*/
+.publishbyDate{
+  align-items: center;
+
+  display: flex;
+  color:#a5a1a1;
+}
+
+.publishbyDate p{
+  margin:0px;
+  font-size: 14px;
+}
+.publishbyDate span{
+  padding: 2px;
+}
+.desc{
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 5;
+  -webkit-box-orient: vertical;
+  margin: 0px;
+}
+.card a{
+  color:inherit;
+  text-decoration: none;
+}
+
+/* Format container news so that it wraps*/
+@media all and (min-width:200px) {
+  main{
+    padding: 20px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+}
+.vergebox{
+  width:90%;
+   height:640px;
+padding: 30px;
+position: relative;
+margin: auto;
+
+}
+
+
+/*About Us Page Content*/
+.aboutsection{
+  display: flex;
+  padding: 15px;
+  align-items: center;
+  margin: auto;
+  width: 90%;
+  height: 90%;
+  background-color: black;
+  
+}
+.aboutsection img{
+  flex: 0 50%;
+  max-height: 90%;
+  max-width: 50%;
+  
+
+}
+.aboutcontentbackground{
+  background-color: #A31621;
+  flex: 0 50%;
+  height: 100%;
+  max-width: 50%;
+  padding: 45px;
+}
+.abouttext{
+  
+  
+  text-align:center;
+  font-size: 2vw;
+  margin: auto;
+text-align: center;
+  color: white;
+ 
+  
+  
+}
+
+/* Text on image banner*/
+h1{
+  
+  font-size: 5vw;
+text-align: center;
+
+}
+h1 span { 
+  -webkit-text-stroke-width: .5px;
+  -webkit-text-stroke-color: black;
+      padding: 20px;
+      line-height: 60px;
+      width: 150px;
+      height: 8px;
+      font-size: 3vw;
+      background-size: 100px;
+
+} 
+.h2{
+  text-align: left; 
+padding-left: 16px;
+font-size: 3.5vh;
+text-align: center;
+
+}
+ .h4{
+  font-size: 24px;
+ }
